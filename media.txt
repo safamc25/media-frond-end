@@ -1,0 +1,125 @@
+
+
+create a web application using React js with below problem statements
+
+    1.user can create add delete edit 
+   
+    2.the card must contain name and a video or mp3 link
+    
+    3.the user has the flexibility to create buckets to categories and card according to his/her choice
+    
+    4.user can move a card to different bucket
+    
+    5.on clicking on the card a model with an iframe should open which, start playing video
+    
+    6.user can create and delete a single card or multiple card under a single bucket at once 
+    
+    7.there should be a separate tab called history, which list the mp3 or mp4 or links that you have played
+        ie, the card name the link and the item was played
+
+        Tech stack
+        ..........
+
+        1.front-end : react.js
+        2.back-end  : create and use json server
+
+
+
+          Axios
+         .......
+     - while using axios library we didnt need to give separate url for the get and post method only one API call is needed 
+     - install axios library for API call(During api call the webpage will take too much time to load the page)
+     - Features:
+         1. Make XMLHttpRequests from the browser
+         2. Make http requests from node.js
+         3. Supports the Promise API
+         4. Intercept request and response
+         5. Transform request and response data
+         6. Cancel requests
+         7. Automatic transforms for JSON data
+         8. Automatic data object serialization to multipart/form-data and x-www-form-urlencoded body encodings
+         9. Client side support for protecting against XSRF
+
+
+          Request Config
+          ..............
+
+          - `url` is the server URL that will be used for the request
+            url: '/user',
+
+          - `method` is the request method to be used when making the request
+             method: 'get', // default
+
+          - `headers` are custom headers to be sent
+             headers: {'X-Requested-With': 'XMLHttpRequest'},
+
+          -  `data` is the data to be sent as the request body
+             Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
+             When no `transformRequest` is set, must be of one of the following types:
+               - string, plain object, ArrayBuffer, ArrayBufferView, URLSearchParams
+               - Browser only: FormData, File, Blob
+               - Node only: Stream, Buffer, FormData (form-data package)
+               data: {
+               firstName: 'Fred'
+               },  
+
+
+
+
+            spread operator
+           ................
+               ... :is called spread operator if in object the data is given key value pair and if we give one data in object the other data should need to be empty
+ 
+   
+
+   props:
+
+
+
+   -child to child data sharing not posssible
+   
+
+   -state lifting: to share data between siblings we use state lifting. the data from the child passed to parent(home) and the data then shared to the other child (parent to child)
+
+
+
+
+            Watch history
+            ..........
+
+       1. create a watch history tab in home page
+       2. create new component for watch history
+                  table format(id,cardname,url,date)
+      3. create a watch history key in db,json and value as array
+               when we click on the card add data to the db.json get watch history from db.json               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
